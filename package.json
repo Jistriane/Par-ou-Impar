@@ -1,0 +1,47 @@
+{
+  "name": "par-ou-impar-evm-signature-lab",
+  "version": "1.0.0",
+  "description": "Projeto Hardhat com contrato Solidity para verificar numeros pares e impares, eventos on-chain, ownership e recuperacao de assinaturas EVM.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "clean": "hardhat clean",
+    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:mainnet": "hardhat test --network hardhatMainnet",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "verify:sepolia": "hardhat verify --network sepolia",
+    "ignition:sepolia": "hardhat ignition deploy ignition/modules/OddOrEven.ts --network sepolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jistriane/Par-ou-Impar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jistriane/Par-ou-Impar/issues"
+  },
+  "homepage": "https://github.com/Jistriane/Par-ou-Impar#readme",
+  "keywords": [
+    "solidity",
+    "hardhat",
+    "ethereum",
+    "sepolia",
+    "ecrecover",
+    "signature",
+    "smart-contract"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "hardhat": "^2.28.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
